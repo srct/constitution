@@ -1,0 +1,7 @@
+compile_pdf:
+  image: tianon/latex
+  script:
+    - latexmk -pdf constitution.tex
+  artifacts:
+    paths:
+      - constitution.pdf
